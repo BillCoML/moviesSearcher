@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+body{
+    background-image: url("https://coolhdwall.com/storage/202105/dune-2021-movie-poster-4k-wallpaper-3840x2160-48.jpg");
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    transition: 5s;
+}
+
+.container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#intro
+{
+    font-family: Delicious Handrawn;
+    color: rgba(255, 255, 255,.6);
+    font-size: clamp(2rem, 8vw, 3rem);
+}
+
+.result
+{
+    height: 380px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.searchBar
+{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-right:50px;
+}
+.searchBar > p
+{
+    font-family: Bebas Neue;
+    font-size: 30px;
+}
+
+.poster
+{
+    background-color: rgb(0, 0, 0);
+    width: 130px;
+    height:180px;
+    margin:5px;
+}
+
+.movie:hover
+{
+    opacity: 1;
+    transition: .2s;
+    background-color: rgb(78, 76, 76);
+}
+
+input[type=text]
+{
+    background-color: orange;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    height: 20px;
+    width: 200px;
+    transition: .3s;
+}
+
+input:focus, textarea:focus, select:focus{
+    outline: orange;
+}
+
+input:hover
+{
+    height: 25px;
+    width: 220px;
+    transition: .3s;
+}
+
+::placeholder
+{
+    color: black;
+    text-align: center;
+}
+
+#submit
+{
+    border-radius: 15px;
+    border: 2px solid black;
+    background-color: orange;
+    transition: .2s;
+    font-weight: bold;
+}
+
+#submit:hover 
+{
+    border-color: white;
+    color: white;
+}
+
+
+#back
+{
+    display: flex;
+    justify-content: left;
+    padding-left: 40px;
+}
+
+#back > button
+{
+    background-color: orange;
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 20px;
+    transition: .1s;
+}
+
+#back > button:hover
+{
+    background-color: white;
+    transition: .1s;
+}
+
+#detailPoster
+{
+    width: 300px;
+    height: 450px;
+}
+
+#brand
+{
+    margin-left: 40px;
+    border: 4px solid black;
+    padding: 2px 5px 2px 5px;
+    cursor: pointer;
+    transition: .2s;
+    font-size: 40px;
+}
+
+
+#brand:hover
+{
+    color: white;
+    border: 4px solid white;
+    transition: .2s;
+}
+
+.info
+{
+    box-sizing: border-box;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 800px;
+    height: 430px;
+    background-image: linear-gradient(rgb(255, 123, 0), rgb(216, 172, 105));
+}
+
+#first
+{
+    display: flex;
+    justify-content: space-around;
+}
+
+#DetailedPoster
+{
+    width: 200px;
+    height: 280px;
+    border: 4px solid black;
+    margin-right: 20px;
+}
+
+#title
+{
+    font-weight: bold;
+    font-size: 30px;
+    font-family: Anton;
+}
+
+#second
+{
+    display: flex;
+    flex-direction: column;
+}
+
+#plot
+{
+    font-size: 15px;
+}
+
+@media only screen and (max-width: 600px) {
+    input
+    {
+        margin-left: 40px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    button
+    {
+        margin-left: 40px;
+    }
+}
+
+

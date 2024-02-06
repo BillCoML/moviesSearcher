@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="project2.css">
+    <script src="project2.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>Galaxy Movie</title>
+</head>
+<body>
+    <div class="container">
+        <div class="searchBar">
+            <p id="brand" onmouseover="textChange1()" onmouseout="textBack1()" onclick="home()">Galaxy Movie</p>
+            <div>
+                <input onclick="inputHover()" onmouseout="inputOutHover()" id="UserInput"type="text" placeholder="Enter movie name ">
+                <button id="submit" onclick="search()">SEARCH</button>
+            </div>
+        </div>
+        
+        <div id="back"></div>
+
+        <div class="result">
+            <div id="intro">Find your best moments here</div> 
+        </div>
+
+    </div>
+
+</body>
+</html>
